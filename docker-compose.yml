@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  database:
+    build: .
+    ports:
+      - 1433:1433
+    restart: unless-stopped
+    environment:
+      SA_PASSWORD: Thisisjustanexample1433
